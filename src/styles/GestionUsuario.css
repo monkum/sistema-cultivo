@@ -1,0 +1,113 @@
+.cuerpoGest {
+    padding-top: 100px;
+    font-family: 'Quicksand', sans-serif;
+}
+.gestionTitle{
+    text-align: center;
+    height: 75px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 75px;
+}
+.opciones ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    display: flex;
+    padding-left: 350px;
+    padding-right: 350px;
+    justify-content: space-between;
+}
+.adduser{
+    margin-left: 22px;
+}
+.usericon{
+    margin-left: 15px;
+}
+.listaopc{
+    padding-top: 250px;
+    padding-bottom: 250px;
+    align-items: center;
+}
+.opcion{
+    padding-left: 12px;
+}
+.opcion2{
+    padding-left: 27px;
+}
+@media(max-width: 1315px) {
+    .opciones ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        display: flex;
+        padding-left: 200px;
+        padding-right: 200px;
+        justify-content: space-between;
+    }
+}
+@media(max-width: 1020px) {
+    .opciones ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        display: flex;
+        padding-left: 80px;
+        padding-right: 90px;
+        justify-content: space-between;
+    }
+    .gestionTitle{
+        text-align: center;
+        height: 75px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        font-size: 50px;
+    }
+}
+@media(max-width: 730px) {
+    .opciones ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        display: flex;
+        padding-left: 100px;
+        padding-right: 100px;
+        justify-content: space-between;
+    }
+}
+@media(max-width: 510px) {
+    .opciones ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        display: flex;
+        padding-left: 35px;
+        padding-right: 50px;
+        justify-content: space-between;
+    }
+    .gestionTitle{
+        text-align: center;
+        height: 75px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        font-size: 35px;
+    }
+}
+@media(min-width: 731px) {
+    .contenedoropc{
+        width: 150px;
+        align-items: center;
+        /*margin-left: 25px;*/
+        overflow: hidden;
+        background-color: #CBC9C9;
+        padding: 30px 50px;
+        height: 150px;
+        place-content: center;
+        border-radius: 10%;
+    }
+}

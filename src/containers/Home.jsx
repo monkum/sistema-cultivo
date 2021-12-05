@@ -6,10 +6,10 @@ import fondo from "../styles/cultivo.jpg"
 const Home = () => {
     return (
         <div className="contenedor">
-            <img src={fondo} alt="" />
-            <div id="contenedor">
+            <img src={fondo} alt="" className="fondo"/>
+            <div className="loginContenedor">
                 <div className="titulo">
-                    <h1>AGRICOLOMBIA S.A.S.</h1>
+                    <h1 className="h1">AGRICOLOMBIA S.A.S.</h1>
                 </div>
                 <div className="login">
                     <div id="login-form" className="login-form">
@@ -18,13 +18,13 @@ const Home = () => {
                                 <li className="filas">
                                     <p>
                                         <label htmlFor="user" className="user" /> Usuario:
-                                        <input type="text" id="usuario" name="usuario" maxLength={50} />
+                                        <input type="text" className="usuario" name="usuario" maxLength={50} />
                                     </p>
                                 </li>
                                 <li className="filas">
                                     <p>
                                         <label htmlFor="contrasena" />Contraseña:
-                                        <input type="password" name="password" id="password" />
+                                        <input type="password" name="password" className="password" />
                                     </p>
                                 </li>
                                 <li className="filas">
@@ -34,7 +34,7 @@ const Home = () => {
                                 </li>
                             </ul>
                             <div className="small-6 columns text-right">
-                                <a href>Olvidaste tu contraseña</a>
+                                <a href="" className="olvido">Olvidaste tu contraseña</a>
                             </div>
                         </form>
                     </div>
