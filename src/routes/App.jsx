@@ -24,7 +24,6 @@ const App = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Layout>
 					<Route path="/" element={<Home />} />
 					<Route path='/login' element={<Login/>} />
 					<Route path='/reset' element={<ResetPassword/>} />
@@ -40,7 +39,6 @@ const App = () => {
 					<Route path='/nuevocultivo' element={<NuevoCultivo/>} />
 					<Route path='/configurarcultivo' element={<ConfigurarCultivo/>} />
 					<Route path='*' element={NotFound} />
-				</Layout>
 			</Routes>
 		</BrowserRouter>
 	);
