@@ -1,6 +1,6 @@
 @import 'vars';
 
-img{
+.fondo{
     height: auto;
     left: 50%;
     top: 50%;
@@ -10,21 +10,22 @@ img{
     position: fixed;
     width: auto;
 }
-#contenedor{
+.loginContenedor{
     align-items: center;
     width: 550px;
     margin: 0 auto;
     overflow: hidden;
     position: absolute;
     background-color: #ffffffd9;
-    top: 300px;
+    top: 100px;
     right: 60px;
+    margin-bottom: 15px;
     padding: 30px 50px;
     height: auto;
     z-index: 10000;
     border-radius: 15px;
 }
-h1{
+.h1{
     text-align: center;
     height: 80px;
     margin-bottom: 10px;
@@ -34,14 +35,14 @@ h1{
 .filas{
     list-style: none;
 }
-#usuario{
+.usuario{
     margin-left: 5px;
     width: 65%;
 }
 .user{
     margin-left: 22px;
 }
-#password{
+.password{
     margin-left: 4.5px;
     width: 65%;
 }
@@ -54,8 +55,9 @@ h1{
     text-align: center;
     width: 100%;
 }
-a{
+.olvido{
     margin-left: 25px;
+    text-decoration: none;
 }
 .ingresar{
     box-shadow: 0 0 0 0.5px #000 inset;
@@ -70,36 +72,38 @@ a{
 }
 
 @media (max-width: 1124px){
-    img{
+    .fondo{
         display: none;
     }
     .contenedor{
         width: 100%;
         position: unset;
     }
-    #contenedor{
+    .loginContenedor{
         left: 25px;
         right: 50px;
+        padding: 2%;
         background-color: #F1EDED;
     }
-    body{
-        background-color:white;
+    .ingresar{
+        margin-left: 160px;
     }
 }
 @media (max-width: 820px){
-    img{
+    .fondo{
         display: none;
     }
     .contenedor{
         width: 100%;
         position: unset;
     }
-    #contenedor{
+    .loginContenedor{
         left: 5px;
         right: 50px;
+        padding: 2%;
         background-color: #F1EDED;
     }
-    body{
-        background-color:white;
+    .ingresar{
+        margin-left: 160px;
     }
 }
