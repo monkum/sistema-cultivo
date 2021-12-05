@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/RegistroPredio.css";
+import "../styles/RegistroPredio.scss";
 
 const RegistroPredio = () => {
     return (

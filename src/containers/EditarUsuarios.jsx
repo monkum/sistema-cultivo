@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/EditarUsuario.css";
+import "../styles/EditarUsuario.scss";
 
 const EditarUsuario = () => {
     return (

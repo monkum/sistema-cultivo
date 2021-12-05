@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Principal.css";
+import "../styles/Principal.scss";
 
 const Principal = () => {
     return (

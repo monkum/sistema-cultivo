@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/CrearCultivo.css";
+import "../styles/CrearCultivo.scss";
 
 const CrearCultivo = () => {
     return (

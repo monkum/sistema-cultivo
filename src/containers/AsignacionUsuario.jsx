@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/AsignacionUsuario.css";
+import "../styles/AsignacionUsuario.scss";
 
 const AsignacionUsuario = () => {
     return (

@@ -4,7 +4,7 @@ import React from "react";
 const Home = () => {
     return (
         <div>
-            Agricolombia SAS
+            <h1>Agricolombia SAS</h1>
         </div>
     );
 }

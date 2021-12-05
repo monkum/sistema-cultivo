@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/RegistroUsuarios.css";
+import "../styles/RegistroUsuarios.scss";
 
 const RegistroUsuarios = () => {
     return (

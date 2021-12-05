@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Login.css";
+import "../styles/Login.scss";
 import fondo from "../styles/cultivo.jpg"
 
 

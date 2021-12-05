@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Usuarios.css";
+import "../styles/Usuarios.scss";
 
 const Usuarios = () => {
     return (
