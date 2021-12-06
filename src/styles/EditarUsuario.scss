@@ -1,1 +1,40 @@
 @import 'vars';
+
+.userEdit-contenedor {
+    padding-top: 20px;
+}
+.userEdit-titulo{
+    text-align: center;
+    height: 75px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 50px;
+}
+.userEdit{
+    display: flex;
+    margin-top: 50px;
+    height: auto;
+    justify-content: center;
+}
+.userEdit-form{
+    width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    background-color: #F1EDED;
+    padding: 30px 50px;
+    height: auto;
+}
+.userEdit-button{
+    background: #77DD77;
+    color: white;
+    width: 100px;
+}
+.userEdit-button:hover{
+    background: #5DC460;
+}
+@media (max-width: 730px) {
+    .userEdit-form {
+        width: auto;
+    }
+}
