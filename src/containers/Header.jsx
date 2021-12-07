@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <nav>
             <div className="barnav-izq">
-                <img src={logo} alt="logo" classNameName="nav-logo" />
+                <img src={logo} alt="logo" className="nav-logo" />
                 <p className="nombre">Agricolombia S.A.S.</p>
             </div>
 
