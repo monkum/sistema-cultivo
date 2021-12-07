@@ -39,6 +39,7 @@ const App = () => {
 					<Route path='/nuevocultivo' element={<NuevoCultivo/>} />
 					<Route path='/configurarcultivo' element={<ConfigurarCultivo/>} />
 					<Route path='/dashboardconfiguracion' element={<DashboardConfiguracion/>} />
+					<Route path='/mapa' element={<MapVista/>} />
 					<Route path='*' element={NotFound} />
 			</Routes>
 		</BrowserRouter>
