@@ -1,10 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import Login from '../containers/Login';
+import Home from '../containers/Home';
 import ResetPassword from '../containers/ResetPassword';
 import NotFound from '../pages/NotFound';
-import Home from '../pages/Home';
 import EditarCultivo from '../containers/EditarCultivo';
 import ProgramarFechas from '../containers/ProgramarFechas';
 import Principal from '../containers/Principal';
@@ -24,7 +23,7 @@ const App = () => {
 		<BrowserRouter>
 			<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path='/login' element={<Login/>} />
+					<Route path='/login' element={<Home />} />
 					<Route path='/reset' element={<ResetPassword/>} />
 					<Route path='/editarcultivo' element={<EditarCultivo/>} />
 					<Route path='/programarfechas' element={<ProgramarFechas/>} />
