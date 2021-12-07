@@ -15,6 +15,7 @@ import AsignacionUsuario from '../containers/AsignacionUsuario';
 import CrearCultivo from '../containers/CrearCultivo';
 import NuevoCultivo from '../containers/NuevoCultivo';
 import ConfigurarCultivo from '../containers/ConfigurarCultivo';
+import DashboardConfiguracion from '../containers/DashboardConfiguracion';
 import '../styles/global.css';
 
 
@@ -36,6 +37,7 @@ const App = () => {
 					<Route path='/crearcultivo' element={<CrearCultivo/>} />
 					<Route path='/nuevocultivo' element={<NuevoCultivo/>} />
 					<Route path='/configurarcultivo' element={<ConfigurarCultivo/>} />
+					<Route path='/dashboardconfiguracion' element={<DashboardConfiguracion/>} />
 					<Route path='*' element={NotFound} />
 			</Routes>
 		</BrowserRouter>
