@@ -16,6 +16,7 @@ import CrearCultivo from '../containers/CrearCultivo';
 import NuevoCultivo from '../containers/NuevoCultivo';
 import ConfigurarCultivo from '../containers/ConfigurarCultivo';
 import DashboardConfiguracion from '../containers/DashboardConfiguracion';
+import MapVista from '../components/MapVista';
 import '../styles/global.css';
 
 
