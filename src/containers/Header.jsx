@@ -17,7 +17,7 @@ const Header = () => {
                 <ul>
                     <li className="rol">Administrador</li>
                     <li className="logout">
-                        <img src={logout} alt="salir"/>
+                        <img src={logout} alt="salir" className="salir"/>
                     </li>
                 </ul>
             </div>

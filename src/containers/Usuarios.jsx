@@ -1,4 +1,4 @@
-import React,  {Fragment} from "react";
+import React, {Fragment} from "react";
 import "../styles/Usuarios.scss";
 import Header from './Header';
 import adduser from '../assets/icons/add_user_icon_183928.svg';
