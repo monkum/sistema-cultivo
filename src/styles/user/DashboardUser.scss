@@ -1,0 +1,111 @@
+@import '../vars';
+
+.cuerpoGest {
+    padding-top: 60px;
+}
+.registUser{
+    text-decoration: none;
+}
+.gestionTitle{
+    text-align: center;
+    height: 65px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 75px;
+}
+.opciones ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    padding-left: 350px;
+    padding-right: 350px;
+    justify-content: space-between;
+}
+.adduser{
+    margin-left: 22px;
+}
+.usericon{
+    margin-left: 15px;
+}
+.listaopc{
+    padding-top: 250px;
+    padding-bottom: 250px;
+    align-items: center;
+}
+.opcion{
+    padding-left: 12px;
+}
+.opcion2{
+    padding-left: 27px;
+}
+@media(max-width: 1315px) {
+    .opciones ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        padding-left: 200px;
+        padding-right: 200px;
+        justify-content: space-between;
+    }
+}
+@media(max-width: 1020px) {
+    .opciones ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        padding-left: 80px;
+        padding-right: 90px;
+        justify-content: space-between;
+    }
+    .gestionTitle{
+        text-align: center;
+        height: 75px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        font-size: 50px;
+    }
+}
+@media(max-width: 730px) {
+    .opciones ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        padding-left: 100px;
+        padding-right: 100px;
+        justify-content: space-between;
+    }
+}
+@media(max-width: 510px) {
+    .opciones ul{
+        list-style: none;
+        display: flex;
+        align-items: center;
+        height: 150px;
+        padding-left: 35px;
+        padding-right: 50px;
+        justify-content: space-between;
+    }
+    .gestionTitle{
+        text-align: center;
+        height: 75px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+        font-size: 35px;
+    }
+}
+@media(min-width: 731px) {
+    .contenedoropc{
+        width: 250px;
+        align-items: center;
+        overflow: hidden;
+        background-color: #CBC9C9;
+        padding: 50px 50px;
+        height: 250px;
+        place-content: center;
+        border-radius: 10%;
+    }
+}
