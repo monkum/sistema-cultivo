@@ -9,7 +9,7 @@ import EditUser from '../pages/user/EditUser';
 import Reset from '../pages/user/Reset';
 import RegisterLand from '../pages/production/RegisterLand';
 import CreateFarm from '../pages/production/CreateFarm';
-
+import InputCost from '../pages/production/InputCost';
 import NotFound from '../pages/NotFound';
 import EditarCultivo from '../containers/EditarCultivo';
 import ProgramarFechas from '../containers/ProgramarFechas';
@@ -17,7 +17,7 @@ import ProgramarFechas from '../containers/ProgramarFechas';
 import AsignacionUsuario from '../containers/AsignacionUsuario';
 
 import NuevoCultivo from '../containers/NuevoCultivo';
-import ConfigurarCultivo from '../containers/ConfigurarCultivo';
+
 import '../styles/global.css';
 
 
@@ -34,18 +34,12 @@ const App = () => {
 					<Route path='/admin/reset' element={<Reset/>} />
 					<Route path='/production/register' element={<RegisterLand/>} />
 					<Route path='/production/create' element={<CreateFarm/>} />
-					
-					<Route path='/asignacionusuario' element={<AsignacionUsuario/>} />
+					<Route path='/production/inputcost' element={<InputCost/>} />
 
+					<Route path='/asignacionusuario' element={<AsignacionUsuario/>} />
 					<Route path='/editarcultivo' element={<EditarCultivo/>} />
 					<Route path='/programarfechas' element={<ProgramarFechas/>} />
-					
-					
-					
-					
-					
 					<Route path='/nuevocultivo' element={<NuevoCultivo/>} />
-					<Route path='/configurarcultivo' element={<ConfigurarCultivo/>} />
 					<Route path='*' element={NotFound} />
 			</Routes>
 		</BrowserRouter>

@@ -1,14 +1,14 @@
 import React, { Fragment } from "react";
-import "../styles/ConfigurarCultivo.scss";
-import Header from "../components/Header";
+import "../../styles/production/InputCost.scss";
+import Header from "../../components/Header";
 
-const ConfigurarCultivo = () => {
+const SetUpCrops = () => {
     return (
         <Fragment>
             <Header />
             <div className="configCultivo-contenedor">
                 <div>
-                    <h1 className="configCultivo-titulo">Configurar Cultivo</h1>
+                    <h1 className="configCultivo-titulo">Ingreso de Costos y Usos de Recursos</h1>
                 </div>
                 <div className="configCultivo-card">
                     <div className="card">
@@ -21,7 +21,7 @@ const ConfigurarCultivo = () => {
                 <div className="configCultivo-form">
                     <form action="" className="row g-3">
                         <div className="col-md-3">
-                            <label for="inputTipo" className="form-label">Tipo de cultivo</label>
+                            <label for="inputTipo" className="form-label">Escoger Cultivo Asignado</label>
                             <select id="inputTipo" className="form-select">
                                 <option selected>Choose...</option>
                                 <option>...</option>
@@ -87,4 +87,4 @@ const ConfigurarCultivo = () => {
     );
 }
 
-export default ConfigurarCultivo;
+export default SetUpCrops;
