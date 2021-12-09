@@ -29,8 +29,10 @@ const Principal = () => {
                             </a>
                         </li>
                         <li className="contenedorlista">
-                            <img src={pin} alt="" id="item3"/>
-                            <p id="item3">Asignar Areas</p>
+                            <a href="/production/crops">
+                                <img src={pin} alt="" id="item3"/>
+                                <p id="item3">Asignar Areas</p>
+                            </a>
                         </li>
                     </ul>
                 </div>
