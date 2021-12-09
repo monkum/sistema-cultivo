@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Header from "../../components/Header";
 import FormCreateCrops from "../../containers/production/FormCreateCrops";
-import MapVista from "../../components/map/MapVista";
+import Vista from "../../components/Location/Vista";
 
 const CreateCrops = () => {
     return (
@@ -13,7 +13,7 @@ const CreateCrops = () => {
                             <FormCreateCrops />
                         </div>
                         <div className="col">
-                            <MapVista />
+                            <Vista />
                         </div>
                     </div>
                 </div>

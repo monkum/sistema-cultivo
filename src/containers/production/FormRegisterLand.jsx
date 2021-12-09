@@ -12,31 +12,31 @@ const FormRegistroPredio = () => {
                     <div className="predioRegister-form">
                         <form action="">
                             <div className="row mb-3">
-                                <label for="inputNombre" className="col-sm-4 col-form-label">Nombre del Predio</label>
+                                <label htmlFor="inputNombre" className="col-sm-4 col-form-label">Nombre del Predio</label>
                                 <div className="col-sm-8">
                                     <input type="text" className="form-control" id="inputNombre" required />
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label for="inputDescripcion" className="col-sm-4 col-form-label">Descripcion</label>
+                                <label htmlFor="inputDescripcion" className="col-sm-4 col-form-label">Descripcion</label>
                                 <div className="col-sm-8">
                                     <input type="text" className="form-control" id="inputDescripcion" required />
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label for="inputArea" className="col-sm-4 col-form-label">Area -hectareas-</label>
+                                <label htmlFor="inputArea" className="col-sm-4 col-form-label">Area -hectareas-</label>
                                 <div className="col-sm-8">
                                     <input type="text" className="form-control" id="inputArea" required />
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label for="inputLatitud" className="col-sm-4 col-form-label">Latitud</label>
+                                <label htmlFor="inputLatitud" className="col-sm-4 col-form-label">Latitud</label>
                                 <div className="col-sm-8">
                                     <input type="latitud" className="form-control" id="inputLatitud" required />
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label for="inputLongitud" className="col-sm-4 col-form-label">Longitud</label>
+                                <label htmlFor="inputLongitud" className="col-sm-4 col-form-label">Longitud</label>
                                 <div className="col-sm-8">
                                     <input type="longitud" className="form-control" id="inputLongitud" required />
                                 </div>

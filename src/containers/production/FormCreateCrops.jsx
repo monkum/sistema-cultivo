@@ -12,13 +12,13 @@ const FormCreateCrops = () => {
                     <div className="predioRegister-form">
                         <form action="">
                             <div className="col-md-10">
-                                <label for="inputPredio" className="form-label">Escoger Predio</label>
+                                <label htmlFor="inputPredio" className="form-label">Escoger Predio</label>
                                 <select id="inputPredio" className="form-select">
                                     <option selected>Choose...</option>
                                     <option>...</option>
                                 </select>
                             </div>
-                            <label for="inputHectareas" className="col-sm-4 col-form-label">Asignar Areas -hectareas-</label>
+                            <label htmlFor="inputHectareas" className="col-sm-4 col-form-label">Asignar Areas -hectareas-</label>
                             <br />
                             <div className="row mb-3">
                                 <div className="col-sm-10">
@@ -26,7 +26,7 @@ const FormCreateCrops = () => {
                                 </div>
                             </div>
                             <div className="col-md-10">
-                                <label for="inputPredio" className="form-label">Escoger Cultivo a Sembrar</label>
+                                <label htmlFor="inputPredio" className="form-label">Escoger Cultivo a Sembrar</label>
                                 <select id="inputPredio" className="form-select">
                                     <option selected>Choose...</option>
                                     <option>...</option>

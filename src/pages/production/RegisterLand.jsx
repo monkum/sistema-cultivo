@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Header from "../../components/Header";
 import FormRegistroPredio from "../../containers/production/FormRegisterLand";
-import MapVista from "../../components/map/MapVista";
+import Vista from "../../components/Location/Vista";
 
 const RegistroPredio = () => {
     return (
@@ -13,7 +13,7 @@ const RegistroPredio = () => {
                         <FormRegistroPredio />
                     </div>
                     <div className="col">
-                        <MapVista />
+                        <Vista />
                     </div>
                 </div>
             </div>
