@@ -1,0 +1,40 @@
+@import '../vars';
+
+.Delete-contenedor {
+    padding-top: 20px;
+}
+.Delete-titulo{
+    text-align: center;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: 50px;
+}
+.Delete{
+    display: flex;
+    margin-top: 50px;
+    height: auto;
+    justify-content: center;
+}
+.Delete-form{
+    width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    background-color: #F1EDED;
+    padding: 30px 50px;
+    height: auto;
+}
+.Delete-button{
+    background: #77DD77;
+    color: white;
+    width: 100px;
+}
+.Delete-button:hover{
+    background: #5DC460;
+}
+@media (max-width: 730px) {
+    .Delete-form {
+        width: auto;
+    }
+}

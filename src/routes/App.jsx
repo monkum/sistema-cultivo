@@ -10,16 +10,11 @@ import Reset from '../pages/user/Reset';
 import RegisterLand from '../pages/production/RegisterLand';
 import CreateFarm from '../pages/production/CreateFarm';
 import InputCost from '../pages/production/InputCost';
+import Assignment from '../pages/production/Assignment';
+import Crops from '../pages/production/CreateCrops';
+import DeleteCrops from '../pages/production/DeleteCrops';
 import NotFound from '../pages/NotFound';
-import EditarCultivo from '../containers/EditarCultivo';
-import ProgramarFechas from '../containers/ProgramarFechas';
-
-import AsignacionUsuario from '../containers/AsignacionUsuario';
-
-import NuevoCultivo from '../containers/NuevoCultivo';
-
 import '../styles/global.css';
-
 
 const App = () => {
 	return (
@@ -35,11 +30,9 @@ const App = () => {
 					<Route path='/production/register' element={<RegisterLand/>} />
 					<Route path='/production/create' element={<CreateFarm/>} />
 					<Route path='/production/inputcost' element={<InputCost/>} />
-
-					<Route path='/asignacionusuario' element={<AsignacionUsuario/>} />
-					<Route path='/editarcultivo' element={<EditarCultivo/>} />
-					<Route path='/programarfechas' element={<ProgramarFechas/>} />
-					<Route path='/nuevocultivo' element={<NuevoCultivo/>} />
+					<Route path='/production/assignment' element={<Assignment/>} />
+					<Route path='/production/crops' element={<Crops/>} />
+					<Route path='/production/delete' element={<DeleteCrops/>} />
 					<Route path='*' element={NotFound} />
 			</Routes>
 		</BrowserRouter>
