@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import "../styles/ConfigurarCultivo.scss";
-import Header from "./Header";
+import Header from "../components/Header";
 
 const ConfigurarCultivo = () => {
     return (

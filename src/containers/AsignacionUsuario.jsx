@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import "../styles/AsignacionUsuario.scss";
-import Header from "./Header"
+import Header from "../components/Header"
 import Search from "../assets/icons/searcher_magnifyng_glass_search_locate_find_icon_123813.svg"
 
 const AsignacionUsuario = () => {

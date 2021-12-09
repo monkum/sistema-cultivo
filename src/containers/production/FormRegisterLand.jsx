@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import "../styles/FormRegistroPredio.scss";
+import "../../styles/production/FormRegisterLand.scss";
 
 const FormRegistroPredio = () => {
     return (

@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
-import Header from "./Header";
-import FormRegistroPredio from "./FormRegistroPredio";
-import MapVista from "../components/MapVista";
+import Header from "../../components/Header";
+import FormRegistroPredio from "../../containers/production/FormRegisterLand";
+import MapVista from "../../components/map/MapVista";
 
 const RegistroPredio = () => {
     return (

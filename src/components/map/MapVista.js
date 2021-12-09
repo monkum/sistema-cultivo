@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { MapContainer, TileLayer } from "react-leaflet";
-import cultivos from '../assets/data/data.json';
+import cultivos from '../../assets/data/data.json';
 import Markers from "./Markers";
-import "../../node_modules/leaflet/dist/leaflet.css";
-import "../styles/MapView.css";
+import "../../../node_modules/leaflet/dist/leaflet.css";
+import "../../styles/map/MapVista.css";
 
 const MapVista = (props) => {
   

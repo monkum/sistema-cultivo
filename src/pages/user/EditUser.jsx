@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
-import "../styles/EditarUsuario.scss";
-import Header from "./Header";
-import searchicon from '../assets/icons/search.svg';
+import "../../styles/user/EditUser.scss";
+import Header from "../../components/Header";
+import searchicon from '../../assets/icons/search.svg';
 
 const EditarUsuario = () => {
     return (
@@ -25,19 +25,19 @@ const EditarUsuario = () => {
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label for="inputName" className="col-sm-4 col-form-label">* Name</label>
+                                <label for="inputName" className="col-sm-4 col-form-label">Nombre</label>
                                 <div className="col-sm-8">
                                     <input type="text" className="form-control" id="inputName" required />
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label for="inputCodigo" className="col-sm-4 col-form-label">* Código</label>
+                                <label for="inputCodigo" className="col-sm-4 col-form-label">Código</label>
                                 <div className="col-sm-8">
                                     <input type="text" className="form-control" id="inputEmail" disabled required />
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label for="asignRole" className="col-sm-4 col-form-label">* Asignar Rol</label>
+                                <label for="asignRole" className="col-sm-4 col-form-label">Asignar Rol</label>
                                 <div className="col-sm-3">
                                     <select className="form-select" id="asignRole" required>
                                         <option selected value="1">Rol 1</option>
@@ -46,13 +46,13 @@ const EditarUsuario = () => {
                                     </select>
                                 </div>
                                 <div className="invalid-feedback">
-                                    Please select a valid state.
+                                    Por favor, seleccionar un rol.
                                 </div>
                             </div>
                             <br />
                             <div className="d-grid gap-2 col-5 d-md-flex mx-auto">
                                 <button type="submit" className="btn userEdit-button me-md-5">Editar</button>
-                                <button type="submit" className="btn userEdit-button">Eliminar</button>
+                                <button type="submit" className="btn userEdit-button">Cancelar</button>
                             </div>
                         </form>
                     </div>

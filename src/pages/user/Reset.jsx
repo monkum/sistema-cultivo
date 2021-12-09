@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
-import "../styles/ResetPassword.scss";
-import Header from "./Header";
+import "../../styles/user/Reset.scss";
+import Header from "../../components/Header"; 
 
-const ResetPassword = () => {
+const Reset = () => {
     return (
         <Fragment>
             <Header />
@@ -17,7 +17,7 @@ const ResetPassword = () => {
                     <div className="resetPassword-form">
                         <form action="">
                             <div className="row mb-3">
-                                <label for="inputEmail" className="col-sm-4 col-form-label">* Email</label>
+                                <label for="inputEmail" className="col-sm-4 col-form-label">Correo Electronico</label>
                                 <div className="col-sm-8">
                                     <input type="email" className="form-control" id="inputEmail" required />
                                 </div>
@@ -34,4 +34,4 @@ const ResetPassword = () => {
     );
 }
 
-export default ResetPassword;
+export default Reset;

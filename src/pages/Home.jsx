@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Home.scss";
-import fondo from "../styles/cultivo.jpg"
+import fondo from "../assets/logos/cultivo.jpg"
 
 
 const Home = () => {
@@ -34,7 +34,7 @@ const Home = () => {
                                 </li>
                             </ul>
                             <div className="small-6 columns text-right">
-                                <a href="" className="olvido">Olvidaste tu contraseña</a>
+                                <a href="/admin/reset" className="olvido">Olvidaste tu contraseña</a>
                             </div>
                         </form>
                     </div>
