@@ -1,6 +1,7 @@
 const cultivos ={
     cultivos: [
         {
+            "id": "00001",
             "description": "Hacienda Palmitos Bananera",
             "name": "Cienega",
             "geometry": [
@@ -9,6 +10,7 @@ const cultivos ={
             ]
         },
         {
+            "id": "00002",
             "description": "Hacienda Cocotero",
             "name": "Puerto Salgar",
             "geometry": [
@@ -17,6 +19,7 @@ const cultivos ={
             ]
         },
         {
+            "id": "00003",
             "description": "Hacienda Humeda",
             "name": "La Mata",
             "geometry": [
