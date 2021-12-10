@@ -1,9 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../styles/Home.scss";
 import fondo from "../assets/logos/cultivo.jpg"
 
 
 const Home = () => {
+    const form = useRef(null);
+    const submitForm = (e) => {
+        e.preventDefault();
+        const fd = new FormData(form.current);
+    
+        const newUser = {};
+        fd.forEach((value, key) => {
+          newUser[key] = value;
+        });
+        console.log("nuevo",newUser);
+    };
     return (
         <div className="contenedor">
             <img src={fondo} alt="" className="fondo"/>
@@ -13,7 +24,7 @@ const Home = () => {
                 </div>
                 <div className="login">
                     <div id="login-form" className="login-form">
-                        <form action>
+                        <form ref={form} onSubmit={submitForm}>
                             <ul>
                                 <li className="filas">
                                     <p>
