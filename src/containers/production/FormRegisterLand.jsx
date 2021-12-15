@@ -18,13 +18,13 @@ const FormRegistroPredio = () => {
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label htmlFor="inputDescripcion" className="col-sm-4 col-form-label">Descripcion</label>
+                                <label htmlFor="inputDescripcion" className="col-sm-4 col-form-label">Municipio</label>
                                 <div className="col-sm-8">
                                     <input type="text" className="form-control" id="inputDescripcion" required />
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label htmlFor="inputArea" className="col-sm-4 col-form-label">Area -hectareas-</label>
+                                <label htmlFor="inputArea" className="col-sm-4 col-form-label">Hectareas del Predio</label>
                                 <div className="col-sm-8">
                                     <input type="text" className="form-control" id="inputArea" required />
                                 </div>

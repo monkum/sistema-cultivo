@@ -22,13 +22,13 @@
     margin: 0 auto;
     overflow: hidden;
     position: absolute;
-    background-color: #F1EDED;
+    background-color: (--white);
     padding: 30px 50px;
     height: auto;
 }
 .predioRegister-button{
     background: #77DD77;
-    color: white;
+    color: (--black);
     width: 100px;
 }
 .predioRegister-button:hover{
