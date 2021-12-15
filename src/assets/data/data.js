@@ -4,7 +4,7 @@ const cultivos ={
             "code": 1,
             "nombre": "Hacienda Palmitos",
             "ubicacion": "Cienega",
-            "hectareas": 500,
+            "hectareas": 600,
             "geometry": [
                 10.969221,
                 -74.184841
