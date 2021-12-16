@@ -3,6 +3,12 @@ import "../../styles/user/RegisterUser.scss";
 import Header from "../../components/Header";
 
 const RegisterUser = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        createPost(postData);
+    }
+
+
     return (
         <Fragment>
             <Header />
@@ -52,7 +58,7 @@ const RegisterUser = () => {
                             </div>
                             <br />
                             <div className="d-grid gap-2 col-5 d-md-flex mx-auto">
-                                <button type="submit" className="btn userRegister-button me-md-5">Registrar</button>
+                                <button type="submit" className="btn userRegister-button me-md-5" onClick={handleSubmit}>Registrar</button>
                                 <button type="submit" className="btn userRegister-button">Cancelar</button>
                             </div>
                         </form>
