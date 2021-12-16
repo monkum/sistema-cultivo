@@ -82,11 +82,7 @@ const RegisterUser = () => {
                             </div>
                             <br />
                             <div className="d-grid gap-2 col-5 d-md-flex mx-auto">
-<<<<<<< HEAD
-                                <button type="submit" className="btn userRegister-button me-md-5" onClick={handleSubmit}>Registrar</button>
-=======
                                 <button type="submit" className="btn userRegister-button me-md-5" onClick={registrar}>Registrar</button>
->>>>>>> c545f1f762a1b5ecd51b5d08d73ba45c9336b993
                                 <button type="submit" className="btn userRegister-button">Cancelar</button>
                             </div>
                         </form>
