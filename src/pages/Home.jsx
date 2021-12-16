@@ -5,6 +5,18 @@ import fondo from "../assets/logos/cultivo.jpg"
 
 const Home = () => {
     const form = useRef(null);
+
+    const handleSubmit = (event) => {
+		event.preventDefault();
+		const formData = new FormData(form.current);
+		const data = {
+			username: formData.get('email'),
+			password: formData.get('password')
+		}
+		console.log(data);
+	}
+
+    /*
     const submitForm = (e) => {
         e.preventDefault();
         const fd = new FormData(form.current);
@@ -15,6 +27,13 @@ const Home = () => {
         });
         console.log("nuevo",newUser);
     };
+    */
+
+    //const usuario = localStorage.getItem('user')
+    //comprobaciones para ver si existe el usuario, si existe:
+    //Object.keys(usuario).length
+    //si el usuario y contraseña son iguales al del localStorage, redirigir a dashboard
+
     return (
         <div className="contenedor">
             <img src={fondo} alt="" className="fondo"/>
@@ -24,7 +43,7 @@ const Home = () => {
                 </div>
                 <div className="login">
                     <div id="login-form" className="login-form">
-                        <form ref={form} onSubmit={submitForm}>
+                        <form ref={form} className="form">
                             <ul>
                                 <li className="filas">
                                     <p>
@@ -40,7 +59,7 @@ const Home = () => {
                                 </li>
                                 <li className="filas">
                                     <p>
-                                        <input type="submit" defaultValue="Ingresar" className="ingresar" />
+                                        <input type="submit" defaultValue="Ingresar" className="ingresar" onClick={handleSubmit} />
                                     </p>
                                 </li>
                             </ul>

@@ -1,25 +1,15 @@
 import React from 'react';
 import '../styles/components/Header.scss';
-import user from '../assets/icons/person-circle.svg';
-import logout from '../assets/icons/box-arrow-right.svg';
-import logo from '../assets/logos/logoProv.jpg';
+
 
 const Header = () => {
     return (
         <nav>
-            <div className="barnav-izq">
-                <img src={logo} alt="logo" className="nav-logo" />
-                <p className="nombre">Agricolombia S.A.S.</p>
-            </div>
-
-            <div className="barnav-der">
-                <img src={user} alt="usericon"/>
-                <ul>
-                    <li className="rol">Administrador</li>
-                    <li className="logout">
-                        <img src={logout} alt="salir" className="salir"/>
-                    </li>
-                </ul>
+            <div className="contenedor">
+                <a href="/login" className="logotipo">AGRICOLOMBIA S.A.S.</a>
+                <navbar>
+                    <a href="/dashboard">Menu Principal</a>
+                </navbar>
             </div>
         </nav>
     )
