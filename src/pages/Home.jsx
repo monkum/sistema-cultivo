@@ -1,77 +1,97 @@
-import React, { useRef } from "react";
+import React, { Component } from 'react';
 import "../styles/Home.scss";
 import fondo from "../assets/logos/cultivo.jpg"
+import axios from 'axios';
+import md5 from 'md5';
+import Cookies from 'universal-cookie';
+const validar="http://localhost:3001/usuarios";
+const cookies = new Cookies();
 
+class Home extends Component {
+    state={
+        form:{
+            username: '',
+            password: ''
+        }
+    }
 
-const Home = () => {
-    const form = useRef(null);
-
-    const handleSubmit = (event) => {
-		event.preventDefault();
-		const formData = new FormData(form.current);
-		const data = {
-			username: formData.get('email'),
-			password: formData.get('password')
-		}
-		console.log(data);
-	}
-
-    /*
-    const submitForm = (e) => {
-        e.preventDefault();
-        const fd = new FormData(form.current);
-    
-        const newUser = {};
-        fd.forEach((value, key) => {
-          newUser[key] = value;
+    handleChange=async e=>{
+        await this.setState({
+            form:{
+                ...this.state.form,
+                [e.target.name]: e.target.value
+            }
         });
-        console.log("nuevo",newUser);
-    };
-    */
+    }
 
-    //const usuario = localStorage.getItem('user')
-    //comprobaciones para ver si existe el usuario, si existe:
-    //Object.keys(usuario).length
-    //si el usuario y contraseña son iguales al del localStorage, redirigir a dashboard
+    iniciarSesion=async()=>{
+        await axios.get(validar, {params: {username: this.state.form.username, password: md5(this.state.form.password)}})
+        .then(response=>{
+            return response.data;
+        })
+        .then(response=>{
+            if(response.length>0){
+                var respuesta=response[0];
+                cookies.set('id', respuesta.id, {path: "/"});
+                cookies.set('nombre', respuesta.nombre, {path: "/"});
+                cookies.set('usurname', respuesta.username, {path: "/"});
+                cookies.set('rol', respuesta.rol, {path: "/"});
+                alert(`Bienvenido ${respuesta.nombre} `);
+                window.location.href="/dashboard";
+            }else{
+                alert('El usuario o la contraseña no son correctos');
+            }
+        })
+        .catch(error=>{
+            console.log(error);
+        })
 
-    return (
-        <div className="contenedor">
-            <img src={fondo} alt="" className="fondo"/>
-            <div className="loginContenedor">
-                <div className="titulo">
-                    <h1 className="h1">AGRICOLOMBIA S.A.S.</h1>
-                </div>
-                <div className="login">
-                    <div id="login-form" className="login-form">
-                        <form ref={form} className="form">
-                            <ul>
-                                <li className="filas">
-                                    <p>
-                                        <label htmlFor="user" className="user" /> Usuario:
-                                        <input type="text" className="usuario" name="usuario" maxLength={50} />
-                                    </p>
-                                </li>
-                                <li className="filas">
-                                    <p>
-                                        <label htmlFor="contrasena" />Contraseña:
-                                        <input type="password" name="password" className="password" />
-                                    </p>
-                                </li>
-                                <li className="filas">
-                                    <p>
-                                        <input type="submit" defaultValue="Ingresar" className="ingresar" onClick={handleSubmit} />
-                                    </p>
-                                </li>
-                            </ul>
-                            <div className="small-6 columns text-right">
-                                <a href="/admin/reset" className="olvido">Olvidaste tu contraseña</a>
-                            </div>
-                        </form>
+    }
+
+    componentDidMount() {
+        if(cookies.get('usuario')){
+            window.location.href="./dashboard";
+        }
+    }
+    
+
+    render() {
+        return (
+            <div className="contenedor">
+                <img src={fondo} alt="" className="fondo"/>
+                    <div className="loginContenedor">   
+                        <div className="titulo">
+                        <h1 className="h1">AGRICOLOMBIA S.A.S.</h1>
                     </div>
+                    <div className="containerPrincipal">
+        <div className="containerSecundario">
+          <div className="form-group">
+            <label>Usuario: </label>
+            <br />
+            <input
+              type="text"
+              className="form-control"
+              name="username"
+              onChange={this.handleChange}
+            />
+            <br />
+            <label>Contraseña: </label>
+            <br />
+            <input
+              type="password"
+              className="form-control"
+              name="password"
+              onChange={this.handleChange}
+            />
+            <br />
+            <button className="btn btn-primary" onClick={()=> this.iniciarSesion()}>Iniciar Sesión</button>
+          </div>
+        </div>
+      </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
 }
 
 export default Home;
