@@ -34,7 +34,7 @@ class Home extends Component {
                 var respuesta=response[0];
                 cookies.set('id', respuesta.id, {path: "/"});
                 cookies.set('nombre', respuesta.nombre, {path: "/"});
-                cookies.set('usurname', respuesta.username, {path: "/"});
+                cookies.set('username', respuesta.username, {path: "/"});
                 cookies.set('rol', respuesta.rol, {path: "/"});
                 alert(`Bienvenido ${respuesta.nombre} `);
                 window.location.href="/dashboard";
