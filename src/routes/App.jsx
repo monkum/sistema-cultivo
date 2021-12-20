@@ -20,20 +20,20 @@ const App = () => {
 	return (
 		<BrowserRouter>
 			<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path='/login' element={<Home />} />
-					<Route path='/dashboard' element={<Dashboard/>} />
-					<Route path='/admin/usermenu' element={<UserMenu/>} />
-					<Route path='/admin/register' element={<RegisterUser/>} />
-					<Route path='/admin/edit' element={<EditUser/>} />
-					<Route path='/admin/reset' element={<Reset/>} />
-					<Route path='/production/register' element={<RegisterLand/>} />
-					<Route path='/production/create' element={<CreateFarm/>} />
-					<Route path='/production/inputcost' element={<InputCost/>} />
-					<Route path='/production/assignment' element={<Assignment/>} />
-					<Route path='/production/crops' element={<Crops/>} />
-					<Route path='/production/delete' element={<DeleteCrops/>} />
-					<Route path='*' element={<NotFound/>} />
+					<Route exact path="/" element={<Home />} />
+					<Route exact path='/login' element={<Home />} />
+					<Route exact path='/dashboard' element={<Dashboard/>} />
+					<Route exact path='/admin/usermenu' element={<UserMenu/>} />
+					<Route exact path='/admin/register' element={<RegisterUser/>} />
+					<Route exact path='/admin/edit' element={<EditUser/>} />
+					<Route exact path='/admin/reset' element={<Reset/>} />
+					<Route exact path='/production/register' element={<RegisterLand/>} />
+					<Route exact path='/production/create' element={<CreateFarm/>} />
+					<Route exact path='/production/inputcost' element={<InputCost/>} />
+					<Route exact path='/production/assignment' element={<Assignment/>} />
+					<Route exact path='/production/crops' element={<Crops/>} />
+					<Route exact path='/production/delete' element={<DeleteCrops/>} />
+					<Route exact path='*' element={<NotFound/>} />
 			</Routes>
 		</BrowserRouter>
 	);
