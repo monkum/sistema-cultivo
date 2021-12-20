@@ -1,12 +1,25 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import "../../styles/production/FormRegisterLand.scss";
 import { notification } from "antd";
 import { createPredio } from '../../api/predio';
 
-const FormRegistroPredio = ({ currentId, setCurrentId }) => {
-    const [predio, setPredio] =  useState({ nombre: '', municipio: '', hectareas: '', latitud: '', longitud: '' });
+const FormRegistroPredio = ({ currentPredio, setCurrentPredio}) => {
+    const [predio, setPredio] =  useState({ nombre: '', municipio: '', hectareas: 0, latitud: '', longitud: '' });
 
-    const handleSubmit = (e) => {
+    useEffect(() =>{
+        if (currentPredio != {})
+        setPredio(
+            {
+                nombre: currentPredio.nombre,
+                municipio: currentPredio.municipio,
+                hectareas: currentPredio.hectareas,
+                latitud: currentPredio.latitud,
+                longitud: currentPredio.longitud
+            }
+        )
+    }, [currentPredio])
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
         if (!predio.nombre || !predio.municipio || !predio.hectareas || !predio.latitud || !predio.longitud ){
@@ -14,37 +27,37 @@ const FormRegistroPredio = ({ currentId, setCurrentId }) => {
                 message: "Todos los campos son obligatorios."
             });
         } else {
-            const result = createPredio(predio);
+            const result = await createPredio(predio);
             notification["success"]({
                 message: "Predio registrado correctamente."
             })
+            console.log(result);
         }
 
-        console.log(predio)
-/*
-        if(currentId){
-            updatePredio(currentId, predio);
+        if(currentPredio){
+            updatePredio(currentPredio);
             clear();
         } else {
             createPredio(predio);
             clear();
-        } */
+        }
     }
 
-    const clear = () => {
-        /* setCurrentId(null); */
-        setPredio({ nombre: '', municipio: '', hectareas: '', latitud: '', longitud: '' });
+    const clear = (e) => {
+        e.preventDefault();
+        setCurrentPredio({});
+        setPredio({ nombre: '', municipio: '', hectareas: 0, latitud: '', longitud: '' });
     }
 
     return (
         <Fragment>
             <div className="predioRegister-contenedor">
                 <div>
-                    <h1 className="predioRegister-titulo">Registro de Predio</h1>
+                    <h1 className="predioRegister-titulo">{currentPredio.nombre ? 'Edicion' : 'Registro'} de Predio</h1>
                 </div>
                 <div className="predioRegister">
                     <div className="predioRegister-form">
-                        <form onSubmit={handleSubmit}>
+                        <form >
                             <div className="row mb-3">
                                 <label htmlFor="inputNombre" className="col-sm-4 col-form-label">Nombre del Predio</label>
                                 <div className="col-sm-8">
@@ -60,7 +73,7 @@ const FormRegistroPredio = ({ currentId, setCurrentId }) => {
                             <div className="row mb-3">
                                 <label htmlFor="inputArea" className="col-sm-4 col-form-label">Hectareas del Predio</label>
                                 <div className="col-sm-8">
-                                    <input type="text" className="hectareas" className="form-control" id="inputArea" value={predio.hectareas} onChange={(e) => setPredio({ ...predio, hectareas: e.target.value})}/>
+                                    <input type="text" className="hectareas" className="form-control" id="inputArea" value={predio.hectareas} onChange={(e) => setPredio({ ...predio, hectareas: parseInt(e.target.value)})}/>
                                 </div>
                             </div>
                             <div className="row mb-3">
@@ -77,7 +90,7 @@ const FormRegistroPredio = ({ currentId, setCurrentId }) => {
                             </div>
                             <br />
                             <div className="d-grid gap-2 col-5 d-md-flex mx-auto">
-                                <button htmltype="submit" className="btn predioRegister-button me-md-5">{currentId ? 'Editar' : 'Añadir'}</button>
+                                <button type="submit" onClick={handleSubmit} className="btn predioRegister-button me-md-5">{currentPredio.nombre ? 'Actualizar' : 'Añadir'}</button>
                                 <button className="btn predioRegister-button" onClick={clear}>Cancelar</button>
                             </div>
                         </form>
