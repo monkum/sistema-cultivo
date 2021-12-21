@@ -43,7 +43,7 @@ class Header extends Component {
         return (
             <nav>
                 <div className="contenedor">
-                    <a href="" className="logotipo">AGRICOLOMBIA S.A.S.</a>
+                    <a href="/dashboard" className="logotipo">AGRICOLOMBIA S.A.S.</a>
                     
                     { condicion_uno && <navbar>
                         <a href="/production/crops">Crear Cosecha, Ingresar uso de Insumos y Tiempos</a>
