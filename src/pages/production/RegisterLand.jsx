@@ -8,17 +8,27 @@ const RegistroPredio = () => {
 
     //const [currentId, setCurrentId ] = useState("")
     const [currentPredio, setCurrentPredio] = useState({})
-    
+    const [predios, setPredios] = useState([]);
+
     return (
         <Fragment>
             <Header />
             <div className="container">
                 <div className="row">
                     <div className="col col1">
-                        <FormRegistroPredio currentPredio={currentPredio} setCurrentPredio={setCurrentPredio}/>
+                        <FormRegistroPredio 
+                            currentPredio={currentPredio} 
+                            setCurrentPredio={setCurrentPredio} 
+                            predios={predios} 
+                            setPredios={setPredios}
+                            />
                     </div>
                     <div className="col col2">
-                        <Vista setCurrentPredio={setCurrentPredio}/>
+                        <Vista 
+                            setCurrentPredio={setCurrentPredio} 
+                            currentPredio={currentPredio} 
+                            predios={predios} 
+                            setPredios={setPredios}/>
                     </div>
                 </div>
             </div>

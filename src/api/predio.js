@@ -14,10 +14,7 @@ export function createPredio(data) {
     return fetch(url, params).then(response => {
         return response.json();
     }).then(result => {
-        if (result.user) {
-            return result;
-        }
-        return result.message;
+        return result
     })
     .catch((err) => {
         return err.message;
@@ -41,19 +38,22 @@ export function getPredios() {
     return predios
 }
 
-export function updatePredios() {
-    const url = `${basePath}/api/predios`;
-    var predios = [];
-
+export function updatePredio(data, id) {
+    const url = `${basePath}/api/predios/${id}`;
+    var predio = {}
     const params = {
-        method: "GET",
+        method: "PATCH",
+        body: JSON.stringify(data),
+        headers: {
+            "Content-Type": "application/json"
+        }
     };
 
-    predios = fetch(url, params).then(response => response.json())
+    predio = fetch(url, params).then(response => response.json())
     .then(data => {return (data)})
     .catch(err => {
-        return [];
+        return err;
     })
 
-    return predios
+    return predio
 }
