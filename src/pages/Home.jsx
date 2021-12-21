@@ -4,7 +4,7 @@ import fondo from "../assets/logos/cultivo.jpg"
 import axios from 'axios';
 import md5 from 'md5';
 import Cookies from 'universal-cookie';
-const validar="http://localhost:3001/usuarios";
+const validar="http://localhost:3003/usuarios";
 const cookies = new Cookies();
 
 class Home extends Component {
@@ -34,7 +34,7 @@ class Home extends Component {
                 var respuesta=response[0];
                 cookies.set('id', respuesta.id, {path: "/"});
                 cookies.set('nombre', respuesta.nombre, {path: "/"});
-                cookies.set('usurname', respuesta.username, {path: "/"});
+                cookies.set('username', respuesta.username, {path: "/"});
                 cookies.set('rol', respuesta.rol, {path: "/"});
                 alert(`Bienvenido ${respuesta.nombre} `);
                 window.location.href="/dashboard";

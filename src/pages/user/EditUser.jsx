@@ -81,7 +81,7 @@ const EditarUsuario = () => {
             <Header />
             <div className="userEdit-contenedor">
                 <div>
-                    <h1 className="userEdit-titulo">Editar Usuario</h1>
+                    <h1 className="userEdit-titulo">Editar y/o Eliminar Usuario</h1>
                 </div>
                 <div className="userEdit">
                     <div className="userEdit-form">
@@ -97,7 +97,7 @@ const EditarUsuario = () => {
                                 </div>
                             </div>
                             <div className="row mb-3">
-                                <label for="inputName" className="col-sm-4 col-form-label">Nombre</label>
+                                <label for="inputName" className="col-sm-4 col-form-label">Correo Electronico</label>
                                 <div className="col-sm-8">
                                     <input type="text" className="form-control" id="inputName" state={nombre} onChange={(e)=>setNombre(e.target.value)} required />
                                 </div>
@@ -125,7 +125,7 @@ const EditarUsuario = () => {
                             <br />
                             <div className="d-grid gap-2 col-5 d-md-flex mx-auto">
                                 <button type="submit" className="btn userEdit-button me-md-5" onClick={editar}>Editar</button>
-                                <button type="submit" className="btn userEdit-button">Cancelar</button>
+                                <button type="submit" className="btn userEdit-button">Eliminar</button>
                             </div>
                         </form>
                     </div>
