@@ -7,7 +7,6 @@ import RegisterUser from '../pages/user/RegisterUser';
 import EditUser from '../pages/user/EditUser';
 import RegisterLand from '../pages/production/RegisterLand';
 import CreateFarm from '../pages/production/CreateFarm';
-import InputCost from '../pages/production/InputCost';
 import Assignment from '../pages/production/Assignment';
 import Crops from '../pages/production/CreateCrops';
 import DeleteCrops from '../pages/production/DeleteCrops';
@@ -25,7 +24,6 @@ const App = () => {
 					<Route exact path='/admin/edit' element={<EditUser/>} />
 					<Route exact path='/production/register' element={<RegisterLand/>} />
 					<Route exact path='/production/create' element={<CreateFarm/>} />
-					<Route exact path='/production/inputcost' element={<InputCost/>} />
 					<Route exact path='/production/assignment' element={<Assignment/>} />
 					<Route exact path='/production/crops' element={<Crops/>} />
 					<Route exact path='/production/delete' element={<DeleteCrops/>} />
