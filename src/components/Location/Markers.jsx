@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Marker } from "react-leaflet";
+import { Marker, Tooltip } from "react-leaflet";
 import { LocationIcon } from "./LocationIcon";
 import cultivos from "../../assets/data/data";
 import { getPredios } from "../../api/predio";
-
+import MarkerPopup from "./MarkerPopup";
 
 const Markers = ({setCurrentPredio, predios, setPredios, currentPredio}) => {
 
@@ -22,7 +22,11 @@ const Markers = ({setCurrentPredio, predios, setPredios, currentPredio}) => {
       click: () => {
         setCurrentPredio(predio)
       },
-    }}/>
+      
+    }}>
+      <Tooltip direction="top">{predio.nombre}</Tooltip>
+      
+    </Marker>
   ));
   return marcador;
 };

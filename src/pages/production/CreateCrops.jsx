@@ -14,7 +14,7 @@ const CreateCrops = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col">
-                            <FormCreateCrops />
+                            <FormCreateCrops predios={predios} setPredios={setPredios} />
                         </div>
                         <div className="col">
                             <Vista 
