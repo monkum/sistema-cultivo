@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../styles/components/Header.scss';
+import { Navbar } from 'react-bootstrap';
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
 var condicion_uno = false;
@@ -45,30 +46,30 @@ class Header extends Component {
                 <div className="contenedor">
                     <a href="/dashboard" className="logotipo">AGRICOLOMBIA S.A.S.</a>
                     
-                    { condicion_uno && <navbar>
+                    { condicion_uno && <Navbar>
                         <a href="/production/crops">Crear Cosecha, Ingresar uso de Insumos y Tiempos</a>
-                    </navbar>}
-                    { condicion_dos && <navbar>
+                    </Navbar>}
+                    { condicion_dos && <Navbar>
                         <a href="/production/register">Registrar Predio</a>
-                    </navbar>}
-                    { condicion_dos && <navbar>
+                    </Navbar>}
+                    { condicion_dos && <Navbar>
                         <a href="/production/create">Crear Cultivo y Costos</a>
-                    </navbar>}
-                    { condicion_dos && <navbar>
+                    </Navbar>}
+                    { condicion_dos && <Navbar>
                         <a href="/production/assignment">Asignacion de Usuarios</a>
-                    </navbar>}
-                    { condicion_tres && <navbar>
+                    </Navbar>}
+                    { condicion_tres && <Navbar>
                         <a href="/admin/register">Registrar Usuario</a>
-                    </navbar>}
-                    { condicion_tres && <navbar>
+                    </Navbar>}
+                    { condicion_tres && <Navbar>
                         <a href="/admin/edit">Editar y Eliminar Usuario</a>
-                    </navbar>}
-                    { condicion_tres && <navbar>
+                    </Navbar>}
+                    { condicion_tres && <Navbar>
                         <a href="/report">Reporte de Costos</a>
-                    </navbar>}
-                    <navbar>
+                    </Navbar>}
+                    <Navbar>
                         <a href="/" onClick={()=>this.cerrarSesion()}>Cerrar Sesión</a>
-                    </navbar>
+                    </Navbar>
                 </div>
             </nav>
         
