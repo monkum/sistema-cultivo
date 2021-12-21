@@ -53,7 +53,7 @@ const SetUpCrops = () => {
                             <label for="inputTimeRecolec" className="form-label">Proyeccion Tiempo de Recolección</label>
                             <div className="input-group">
                                 <input type="text" className="form-control" id="inputTimeRecolec" />
-                                <span className="input-group-text" id="basic-addon2">/ha</span>
+                                <span className="input-group-text" id="basic-addon2">semanas</span>
                             </div>
                         </div>
                         <div className="col-md-3">
@@ -67,7 +67,7 @@ const SetUpCrops = () => {
                             <label for="inputProxSiembra" className="form-label">Tiempo Proyectado para Proxima Siembra</label>
                             <div className="input-group">
                                 <input type="text" className="form-control" id="inputProxSiembra" />
-                                <span className="input-group-text" id="basic-addon2">días</span>
+                                <span className="input-group-text" id="basic-addon2">semanas</span>
                             </div>
                         </div>
                         <div className="col-12"></div>
