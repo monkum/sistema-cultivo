@@ -6,7 +6,7 @@ const FormCreateCrops = () => {
         <Fragment>
             <div className="predioRegister-contenedor">
                 <div>
-                    <h1 className="predioRegister-titulo">Crear Cultivo</h1>
+                    <h1 className="predioRegister-titulo">Crear Cosecha</h1>
                 </div>
                 <div className="predioRegister">
                     <div className="predioRegister-form">
@@ -14,7 +14,7 @@ const FormCreateCrops = () => {
                             <div className="col-md-10">
                                 <label htmlFor="inputPredio" className="form-label">Escoger Predio</label>
                                 <select id="inputPredio" className="form-select">
-                                    <option selected>Choose...</option>
+                                    <option selected>Escoger Predio</option>
                                     <option>...</option>
                                 </select>
                             </div>
@@ -26,16 +26,16 @@ const FormCreateCrops = () => {
                                 </div>
                             </div>
                             <div className="col-md-10">
-                                <label htmlFor="inputPredio" className="form-label">Escoger Cultivo a Sembrar</label>
+                                <label htmlFor="inputPredio" className="form-label">Escoger Cultivo</label>
                                 <select id="inputPredio" className="form-select">
-                                    <option selected>Choose...</option>
+                                    <option selected>Escoger Cultivo</option>
                                     <option>...</option>
                                 </select>
                             </div>
                             <br />
                             <div className="d-grid gap-2 col-5 d-md-flex mx-auto">
-                                <button type="submit" className="btn predioRegister-button me-md-5">Crear</button>
-                                <button type="submit" className="btn predioRegister-button">Cancelar</button>
+                                <button type="submit" className="btn predioRegister-button me-md-5">Siguiente</button>
+                                
                             </div>
                         </form>
                     </div>
