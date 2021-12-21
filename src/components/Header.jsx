@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Navbar } from 'react-bootstrap';
 import '../styles/components/Header.scss';
 import Cookies from 'universal-cookie';
 const cookies = new Cookies();
@@ -46,27 +45,30 @@ class Header extends Component {
                 <div className="contenedor">
                     <a href="/dashboard" className="logotipo">AGRICOLOMBIA S.A.S.</a>
                     
-                    { condicion_uno && <Navbar>
+                    { condicion_uno && <navbar>
                         <a href="/production/crops">Crear Cosecha, Ingresar uso de Insumos y Tiempos</a>
-                    </Navbar>}
-                    { condicion_dos && <Navbar>
+                    </navbar>}
+                    { condicion_dos && <navbar>
                         <a href="/production/register">Registrar Predio</a>
-                    </Navbar>}
-                    { condicion_dos && <Navbar>
+                    </navbar>}
+                    { condicion_dos && <navbar>
                         <a href="/production/create">Crear Cultivo y Costos</a>
-                    </Navbar>}
-                    { condicion_dos && <Navbar>
+                    </navbar>}
+                    { condicion_dos && <navbar>
                         <a href="/production/assignment">Asignacion de Usuarios</a>
-                    </Navbar>}
-                    { condicion_tres && <Navbar>
+                    </navbar>}
+                    { condicion_tres && <navbar>
                         <a href="/admin/register">Registrar Usuario</a>
-                    </Navbar>}
-                    { condicion_tres && <Navbar>
+                    </navbar>}
+                    { condicion_tres && <navbar>
                         <a href="/admin/edit">Editar y Eliminar Usuario</a>
-                    </Navbar>}
-                    <Navbar>
+                    </navbar>}
+                    { condicion_tres && <navbar>
+                        <a href="/report">Reporte de Costos</a>
+                    </navbar>}
+                    <navbar>
                         <a href="/" onClick={()=>this.cerrarSesion()}>Cerrar Sesión</a>
-                    </Navbar>
+                    </navbar>
                 </div>
             </nav>
         
