@@ -10,15 +10,6 @@ const SetUpCrops = () => {
                 <div>
                     <h1 className="configCultivo-titulo">Ingreso de Insumos y Tiempos</h1>
                 </div>
-                <div className="configCultivo-card">
-                    <div className="card">
-                        <div className="card-body">
-                            <p>Nombre de Predio: </p>
-                            <p>Area -en hectareas-: </p>
-                            <p>Cultivo seleccionado: </p>
-                        </div>
-                    </div>
-                </div>
                 <div className="configCultivo-form">
                     <form action="" className="row g-3">
                         <div className="col-md-3">
