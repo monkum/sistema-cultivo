@@ -63,6 +63,9 @@ class Header extends Component {
                     { condicion_tres && <navbar>
                         <a href="/admin/edit">Editar y Eliminar Usuario</a>
                     </navbar>}
+                    { condicion_tres && <navbar>
+                        <a href="/report">Reporte de Costos</a>
+                    </navbar>}
                     <navbar>
                         <a href="/" onClick={()=>this.cerrarSesion()}>Cerrar Sesión</a>
                     </navbar>
