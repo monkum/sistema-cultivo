@@ -47,7 +47,7 @@ class Header extends Component {
                     <a href="/dashboard" className="logotipo">AGRICOLOMBIA S.A.S.</a>
                     
                     { condicion_uno && <Navbar>
-                        <a href="/production/crops">Crear Cosecha, Ingresar uso de Insumos y Tiempos</a>
+                        <a href="/production/crops">Crear Cosecha, Ingresar Insumos y Tiempos</a>
                     </Navbar>}
                     { condicion_dos && <Navbar>
                         <a href="/production/register">Registrar Predio</a>
@@ -63,9 +63,6 @@ class Header extends Component {
                     </Navbar>}
                     { condicion_tres && <Navbar>
                         <a href="/admin/edit">Editar y Eliminar Usuario</a>
-                    </Navbar>}
-                    { condicion_tres && <Navbar>
-                        <a href="/report">Reporte de Costos</a>
                     </Navbar>}
                     <Navbar>
                         <a href="/" onClick={()=>this.cerrarSesion()}>Cerrar Sesión</a>

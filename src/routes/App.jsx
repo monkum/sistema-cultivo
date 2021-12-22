@@ -10,7 +10,6 @@ import CreateFarm from '../pages/production/CreateFarm';
 import Assignment from '../pages/production/Assignment';
 import Crops from '../pages/production/CreateCrops';
 import DeleteCrops from '../pages/production/DeleteCrops';
-import Report from '../pages/report/Report';
 import NotFound from '../pages/NotFound';
 import '../styles/global.css';
 
@@ -28,7 +27,6 @@ const App = () => {
 					<Route exact path='/production/assignment' element={<Assignment/>} />
 					<Route exact path='/production/crops' element={<Crops/>} />
 					<Route exact path='/production/delete' element={<DeleteCrops/>} />
-					<Route exact path='/report' element={<Report/>} />
 					<Route exact path='*' element={<NotFound/>} />
 			</Routes>
 		</BrowserRouter>

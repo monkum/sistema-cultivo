@@ -11,6 +11,11 @@ const CreateCrops = () => {
     return (
             <Fragment>
                 <Header />
+                <div>
+                    <h1 className="predioRegister-titulo">Crear Cosecha, Ingresar Insumos y Tiempos</h1>
+                </div>
+                <br />
+                <br />
                 <div className="container">
                     <div className="row">
                         <div className="col">

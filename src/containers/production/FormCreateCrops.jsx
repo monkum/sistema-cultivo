@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect, useState } from "react";
-import cultivos from "../../assets/data/data";
 import "../../styles/production/FormCreateCrops.scss";
 import { createCosecha } from "../../api/cultivo";
 import { getProductos } from "../../api/productoAgricola";
@@ -88,9 +87,6 @@ const FormCreateCrops = ({predios, setPredios }) => {
     return (
         <Fragment>
             <div className="predioRegister-contenedor">
-                <div>
-                    <h1 className="predioRegister-titulo">Crear Cosecha</h1>
-                </div>
                 <div className="predioRegister">
                     <div className="predioRegister-form">
                         <form action="">

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Marker, Tooltip } from "react-leaflet";
 import { LocationIcon } from "./LocationIcon";
-import cultivos from "../../assets/data/data";
 import { getPredios } from "../../api/predio";
 import MarkerPopup from "./MarkerPopup";
 

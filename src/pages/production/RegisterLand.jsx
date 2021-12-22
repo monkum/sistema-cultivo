@@ -13,6 +13,11 @@ const RegistroPredio = () => {
     return (
         <Fragment>
             <Header />
+            <div>
+                <h1 className="predioRegister-titulo">Registro de Predio</h1>
+            </div>
+            <br />
+            <br />
             <div className="container">
                 <div className="row">
                     <div className="col col1">
